@@ -25,6 +25,31 @@
 
     <h2>Contacto</h2>
     <p>Podés contactarme a través de mi perfil de GitHub.</p>
+<hr>
+    <h2>Iniciar Sesión</h2>
+    <form id="login-form">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <button type="submit">Entrar</button>
+    </form>
+<script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que la página se recargue sola
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (!email || !password) {
+                alert('Por favor, complete todos los campos.');
+            } else {
+                alert('¡Formulario enviado con éxito!');
+            }
+        });
+    </script>
 
 </body>
 </html>
