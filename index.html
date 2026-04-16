@@ -6,43 +6,24 @@
 </head>
 <body>
 
-    <h1>Cecilia Abigail Prieto López</h1>
-    <p>Estudiante de Informática </p>
+    <h1>Hola Paraguay</h1>
+    <p>¡Mi primer sitio web con Git!</p>
+    
+    <hr> <h1>Cecilia Prieto</h1>
+    <p>Estudiante de Informática y Administración</p>
+    
+    <h2>Educación</h2>
+    <hr>
 
-    <hr> <h2>Educación</h2>
-    <ul>
-        <li><b>Carrera:</b> Informática </li>
-        <li><b>Institución:</b>Facultad Politecnica UNVES</li>
-    </ul>
-
-    <h2>Habilidades</h2>
-    <ul>
-        <li>Programación en Python</li>
-        <li>Manejo de GNU Octave</li>
-        <li>Gestión de Proyectos (Business Model Canvas)</li>
-        <li>Git y GitHub (¡Esto ya lo sabés!)</li>
-    </ul>
-
-    <h2>Contacto</h2>
-    <p>Podés contactarme a través de mi perfil de GitHub.</p>
-<hr>
     <h2>Iniciar Sesión</h2>
     <form id="login-form">
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+        </form>
 
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br><br>
-
-        <button type="submit">Entrar</button>
-    </form>
-<script>
+    <script>
         document.getElementById('login-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Evita que la página se recargue sola
-            
+            event.preventDefault();
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
-
             if (!email || !password) {
                 alert('Por favor, complete todos los campos.');
             } else {
